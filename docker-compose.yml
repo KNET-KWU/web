@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  knet-main:
+    container_name: knet-main
+    build: 
+      context: ./knet-main
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 8080:8080
